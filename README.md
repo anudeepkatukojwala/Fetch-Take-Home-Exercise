@@ -45,7 +45,8 @@ This project is a Java-based tool designed to periodically check the health of v
 - For testing, you can use the YAML file present in the below path
 - Test YAML file path in project: `src/main/resources/testYamlFile`
 
-### Using Command Line
+### Using Linux Command Line (MacBook CLI will work)
+> For Windows CLI commands you may have to use different path separator such as ';' in the below commands, but I have not tested in Windows CLI
 
 1. **Clone the Repository**:
     ```bash
