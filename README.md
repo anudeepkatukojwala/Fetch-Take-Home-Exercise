@@ -39,7 +39,11 @@ This project is a Java-based tool designed to periodically check the health of v
 4. **Run the Application**:
 - Right-click on `src/main/java/com/fetch/project/Main.java`.
 - Select `Run 'Main.main()'`.
-- When prompted, enter the valid path to your YAML file containing the endpoint configurations.
+
+5. **Enter the YAML File Path**:
+- After the application starts, enter the path to your YAML file when prompted in the console.
+- For testing, you can use the YAML file present in the below path
+- Test YAML file path in project: `src/main/resources/testYamlFile`
 
 ### Using Command Line
 
@@ -51,7 +55,7 @@ This project is a Java-based tool designed to periodically check the health of v
     cd Fetch-Take-Home-Exercise/
    ```
 > **Note:**
-> - You need to stay inside `Fetch-Take-Home-Exercise/` and outside `src/` directory.
+> - You need to stay inside `Fetch-Take-Home-Exercise/` and outside `src/` directory to execute the below commands.
 > - The correct directory to stay inside is the directory that directly contains the `src` folder.
 
 
@@ -63,6 +67,10 @@ This project is a Java-based tool designed to periodically check the health of v
     ```bash
    java -cp "src/main/java/com/fetch/project:src/main/resources/snakeyaml-2.1.jar" Main
 
+5. **Enter the YAML File Path**:
+- After the application starts, enter the path to your YAML file when prompted in the console.
+- For testing, you can use the YAML file present in the below path
+- Test YAML file path in project: `src/main/resources/testYamlFile`
 
 ### Configuration
 The application reads endpoint configurations from a YAML file. The YAML file should follow this format:
