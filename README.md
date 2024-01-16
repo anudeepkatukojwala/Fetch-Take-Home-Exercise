@@ -19,17 +19,6 @@ This project is a Java-based tool designed to periodically check the health of v
     under Project Structure if it is not already present.
    ```
 
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/anudeepkatukojwala/Fetch-Take-Home-Exercise.git
-
-2. Navigate to the project directory:
-   ```bash
-    cd Fetch-Take-Home-Exercise/src/main/java/com/fetch/project/
-3. Make sure you have snakeyaml-2.1.jar file as described in Prerequisites
-
 ## Usage Instructions
 
 ### Using IntelliJ IDEA
@@ -43,8 +32,9 @@ This project is a Java-based tool designed to periodically check the health of v
 - Select `File > Open` and choose the project directory.
 
 3. **Configure Project**:
-- Ensure that the JDK 21 is set correctly in `File > Project Structure`.
-- Add `snakeyaml-2.1.jar` to your project's libraries: `File > Project Structure > Libraries > + > Java > [navigate to and select snakeyaml-2.1.jar]`.
+- Ensure that the JDK 18 or higher is set correctly in `File > Project Structure`.
+- Add `snakeyaml-2.1.jar` to your project's libraries: `File > Project Structure > Libraries > + > Java > [navigate to and select snakeyaml-2.1.jar]`. 
+  You can find `snakeyaml-2.1.jar` file under src/main/resources/
 
 4. **Run the Application**:
 - Right-click on `src/main/java/com/fetch/project/Main.java`.
@@ -55,16 +45,21 @@ This project is a Java-based tool designed to periodically check the health of v
 
 1. **Clone the Repository**:
     ```bash
-   git clone https://github.com/anudeepkatukojwala/Fetch-Take-Home-Exercise.git
-2. Navigate to the project directory:
+    git clone https://github.com/anudeepkatukojwala/Fetch-Take-Home-Exercise.git
+2. Navigate to the correct project directory to execute commands:
     ```bash
-    cd Fetch-Take-Home-Exercise/src/main/java/com/fetch/project/
+    cd Fetch-Take-Home-Exercise/
+   ```
+> **Note:**
+> - You need to stay inside `Fetch-Take-Home-Exercise/` and outside `src/` directory.
+> - The correct directory to stay inside is the directory that directly contains the `src` folder.
 
-3. **Compile the Project**:
+
+3. **Compile the Project using below command**:
     ```bash
    javac -cp "src/main/resources/snakeyaml-2.1.jar" src/main/java/com/fetch/project/*.java
 
-4. **Run the Application**:
+4. **Run the Application using below command**:
     ```bash
    java -cp "src/main/java/com/fetch/project:src/main/resources/snakeyaml-2.1.jar" Main
 
