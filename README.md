@@ -11,7 +11,7 @@ This project is a Java-based tool designed to periodically check the health of v
 ## Getting Started
 
 ### Prerequisites
-1) ```Java 11 or higher```
+1) ```Java 18 or higher```
 2) ```
    snakeyaml-2.1.jar:
    (This is must) You can find this jar file under src/main/resources/
@@ -23,16 +23,51 @@ This project is a Java-based tool designed to periodically check the health of v
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/anudeepkatukojwala/Fetch-Take-Home-Exercise-Anudeep-Katukojwala.git
+   git clone https://github.com/anudeepkatukojwala/Fetch-Take-Home-Exercise.git
 
 2. Navigate to the project directory:
    ```bash
-    cd Fetch-Take-Home-Exercise-Anudeep-Katukojwala/src/main/java/com/fetch/project/
+    cd Fetch-Take-Home-Exercise/src/main/java/com/fetch/project/
 3. Make sure you have snakeyaml-2.1.jar file as described in Prerequisites
 
-### Usage
-- Run the Main class in the project.
+## Usage Instructions
+
+### Using IntelliJ IDEA
+
+1. **Clone the Repository**:
+    ```bash
+   git clone https://github.com/anudeepkatukojwala/Fetch-Take-Home-Exercise.git
+   
+2. **Open the Project**:
+- Open IntelliJ IDEA.
+- Select `File > Open` and choose the project directory.
+
+3. **Configure Project**:
+- Ensure that the JDK 21 is set correctly in `File > Project Structure`.
+- Add `snakeyaml-2.1.jar` to your project's libraries: `File > Project Structure > Libraries > + > Java > [navigate to and select snakeyaml-2.1.jar]`.
+
+4. **Run the Application**:
+- Right-click on `src/main/java/com/fetch/project/Main.java`.
+- Select `Run 'Main.main()'`.
 - When prompted, enter the valid path to your YAML file containing the endpoint configurations.
+
+### Using Command Line
+
+1. **Clone the Repository**:
+    ```bash
+   git clone https://github.com/anudeepkatukojwala/Fetch-Take-Home-Exercise.git
+2. Navigate to the project directory:
+    ```bash
+    cd Fetch-Take-Home-Exercise/src/main/java/com/fetch/project/
+
+3. **Compile the Project**:
+    ```bash
+   javac -cp "src/main/resources/snakeyaml-2.1.jar" src/main/java/com/fetch/project/*.java
+
+4. **Run the Application**:
+    ```bash
+   java -cp "src/main/java/com/fetch/project:src/main/resources/snakeyaml-2.1.jar" Main
+
 
 ### Configuration
 The application reads endpoint configurations from a YAML file. The YAML file should follow this format:
